@@ -1,0 +1,15 @@
+\set QUIET 1
+
+\set PROMPT1 '(%M:%>) %`date +%H:%M:%S` [%n@%/] \n%x%R%#'
+
+\set COMP_KEYWORD_CASE upper
+
+\set VERBOSITY verbose
+
+SET timezone TO '${timezone_preference}';
+SET search_path TO ${schemas_preference};
+
+\set QUIET 0
+
+\echo 'Timezone is set to UTC+${timezone_utc_preference}'
+\echo 'Search path is set to SCHEMAS: ${schemas_preference}\n'
